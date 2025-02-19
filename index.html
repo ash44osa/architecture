@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Architecture Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/styles.min.css"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ruda:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <img src="images/logo1x.png" alt="logo" />
+        <span>Lower Side Architecture</span>
+      </header>
+    </div>
+    <!-- end header wrapper -->
+
+    <div id="navWrapper">
+      <nav>
+        <ul>
+          <li class="active"><a href="#">Learn</a></li>
+          <li><a href="#">Practice</a></li>
+          <li><a href="#">Implement</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end nav wrapper -->
+
+    <div id="mainWrapper">
+      <main>
+        <picture class="hero">
+          <source media="(max-width: 700px)" srcset="images/hero-small.webp" />
+          <source
+            media="(max-width: 1100px)"
+            srcset="images/hero-medium.webp"
+          />
+          <img
+            src="images/hero-large.webp"
+            alt="Architecture"
+            width="16"
+            height="9"
+          />
+        </picture>
+        <h2>My Video with Captions</h2>
+        <video controls>
+          <source src="media/trimmed_hb.mp4" type="video/mp4" />
+          <source src="media/trimmed_hb.webm" type="video/webm" />
+          <track
+            label="English"
+            kind="subtitles"
+            srclang="en"
+            src="media/ash_suben.vtt"
+            default
+          />
+          <track
+            label="Español"
+            kind="subtitles"
+            srclang="es"
+            src="media/ash_subes.vtt"
+          />
+        </video>
+        <details>
+          <summary>Video Transcript</summary>
+          <p>
+            Hello. This is a video for principles of web languages. Um, the
+            assignment 3, which is the architecture company. Right now we're
+            learning how to incorporate videos into our websites so I'm excited
+            to see how it turns out.
+          </p>
+        </details>
+      </main>
+    </div>
+    <!-- end main wrapper -->
+
+    <div id="footerWrapper">
+      <footer>
+        <p>
+          Copyright &copy; 2025 Ashton Osazuwa |
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> |
+        </p>
+      </footer>
+    </div>
+    <!-- end footer wrapper -->
+  </body>
+</html>

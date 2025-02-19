@@ -1,0 +1,156 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------- BODY --------------------------- */
+body {
+  font-family: $defaultFont;
+  font-weight: $lightWeight;
+  background-color: #f5f5f5;
+  color: $darkGrey;
+}
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {
+  background-color: $primaryColor;
+  padding: 1rem 0;
+  border-bottom: 3px solid $secondaryColor;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 1rem;
+
+  img {
+    height: 50px;
+  }
+
+  span {
+    font-size: 1.8rem;
+    font-weight: $boldWeight;
+    color: white;
+  }
+}
+
+/* --------------------------- NAVIGATION --------------------------- */
+#navWrapper {
+  background-color: $accentColor;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+
+  li {
+    margin: 0 1rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: darken($accentColor, 10%);
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .active a {
+    background-color: $secondaryColor;
+    font-weight: $boldWeight;
+    border-radius: 5px;
+  }
+}
+
+/* --------------------------- MAIN CONTENT --------------------------- */
+#mainWrapper {
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main {
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: $normalWeight;
+    color: $secondaryColor;
+    margin: 1rem 0;
+  }
+}
+.hero {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+video {
+  width: 100%;
+  display: block;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+details {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 4px solid $accentColor;
+  background: lighten($accentColor, 30%);
+  border-radius: 5px;
+
+  summary {
+    font-weight: $boldWeight;
+    background-color: $secondaryColor;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  p {
+    padding: 1rem;
+    color: $darkGrey;
+  }
+}
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+  background-color: $primaryColor;
+  padding: 1.5rem 0;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: $leading;
+
+  a {
+    color: $lightGrey;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
